@@ -192,6 +192,10 @@ button.shot .cap{position:absolute;left:14px;bottom:14px;background:var(--bg);co
 .figbtn img{display:block;width:100%;height:auto}
 @media(max-width:800px){.card-head{grid-template-columns:1fr}.cover{min-height:230px}}
 @media(prefers-reduced-motion:reduce){.cover img,.plus{transition:none}}
+.cover-art{background:radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--accent) 34%,transparent),transparent 60%),linear-gradient(160deg,#241912,#14130f)}
+.cover-art svg{position:absolute;inset:0;width:100%;height:100%}
+.a-f{fill:var(--accent)}.a-s{stroke:var(--accent)}
+@media(max-width:800px){.cover-art .stat{display:none}}
 </style>
 </head>
 <body>
@@ -210,7 +214,7 @@ button.shot .cap{position:absolute;left:14px;bottom:14px;background:var(--bg);co
     <p class="mono">Lamya Khalid · Najran University, 2025</p>
     <h1>Finding the<br><em>signal</em> in<br>the data.</h1>
     <p class="lede">Information Systems graduate focused on Machine Learning. I work in Python on data analysis projects, and I document what each one finds and where it falls short.</p>
-    <div class="cta"><a class="btn fill" href="#projects">View projects</a><a class="btn" href="https://github.com/LamyaDev" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/lamya-khaled-004142273" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="mailto:lamya.k0h@gmail.com">Email</a></div>
+    <div class="cta"><a class="btn fill" href="#projects">View projects</a><a class="btn" href="Lamia_AlSaiari_En_CV.pdf" target="_blank" rel="noopener">CV ↓</a><a class="btn" href="https://github.com/LamyaDev" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/lamya-khaled-004142273" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="mailto:lamya.k0h@gmail.com">Email</a></div>
   </div>
 </section>
 
@@ -247,11 +251,29 @@ button.shot .cap{position:absolute;left:14px;bottom:14px;background:var(--bg);co
     <div class="cat-h"><h3>Data Analysis</h3><span class="mono">2 projects</span></div>
     <article class="case acc rv">
     <button type="button" class="card-head" aria-expanded="false" aria-controls="detail-1">
-      <span class="cover cover-sup" role="img" aria-label="Preview: urgent tickets take 541 minutes to resolve on average, low-priority tickets 6,544">
-        <span class="kick mono">Avg resolution time (min)</span>
-        <span class="pair"><span class="lab mono">Urgent</span><i style="--w:8.3%"></i><span class="num">541</span></span>
-        <span class="pair"><span class="lab mono">Low</span><i style="--w:100%"></i><span class="num">6,544</span></span>
-        <span class="cap2">12× longer for low-priority tickets</span>
+      <span class="cover cover-art" role="img" aria-label="Illustration: a support agent's headset with chat bubbles and ticket cards">
+        <svg viewBox="0 0 440 340" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+          <g class="bubble"><path d="M44 36h84a14 14 0 0 1 14 14v28a14 14 0 0 1-14 14H76l-20 16V92H44a14 14 0 0 1-14-14V50a14 14 0 0 1 14-14z" fill="none" stroke="#f4efe2" stroke-opacity=".75" stroke-width="2"/>
+            <circle cx="62" cy="64" r="4.5" class="a-f"/><circle cx="86" cy="64" r="4.5" class="a-f" opacity=".7"/><circle cx="110" cy="64" r="4.5" class="a-f" opacity=".4"/></g>
+          <g class="headset" fill="none" stroke-linecap="round">
+            <path d="M150 150a70 70 0 0 1 140 0" stroke="#f4efe2" stroke-width="9"/>
+            <rect x="134" y="138" width="30" height="62" rx="13" class="a-f" stroke="none"/>
+            <rect x="276" y="138" width="30" height="62" rx="13" class="a-f" stroke="none"/>
+            <path d="M291 194q2 42-56 44" stroke="#f4efe2" stroke-width="5"/>
+            <ellipse cx="228" cy="238" rx="11" ry="8" fill="#f4efe2" stroke="none"/>
+          </g>
+          <g transform="rotate(5 110 270)"><rect x="40" y="226" width="150" height="76" rx="8" fill="#1a1712" stroke="#3a3529"/></g>
+          <g transform="rotate(-3 110 270)"><rect x="40" y="230" width="150" height="76" rx="8" fill="#1d1a14" stroke="#463f31"/></g>
+          <g><rect x="34" y="236" width="150" height="76" rx="8" fill="#221e17" stroke="#5a5240"/>
+            <rect x="48" y="250" width="46" height="16" rx="8" class="a-f"/>
+            <rect x="48" y="276" width="108" height="6" rx="3" fill="#f4efe2" opacity=".55"/>
+            <rect x="48" y="290" width="74" height="6" rx="3" fill="#f4efe2" opacity=".3"/></g>
+          <g class="a-s" fill="none" stroke-width="3" stroke-linecap="round"><circle cx="226" cy="302" r="17"/><path d="M226 302v-9M226 302l7 4"/></g>
+          <g><path d="M314 262h84a14 14 0 0 1 14 14v22a14 14 0 0 1-14 14h-52l-18 14v-14h-14a14 14 0 0 1-14-14v-22a14 14 0 0 1 14-14z" class="a-f" opacity=".92"/>
+            <path d="M318 281h72M318 295h46" stroke="#14130f" stroke-width="4" stroke-linecap="round"/></g>
+          <circle cx="388" cy="70" r="3" class="a-f"/><circle cx="410" cy="110" r="2" fill="#f4efe2" opacity=".5"/><circle cx="352" cy="40" r="2" fill="#f4efe2" opacity=".4"/><circle cx="24" cy="180" r="2.5" class="a-f" opacity=".6"/>
+        </svg>
+        <span class="stat"><b>4,000</b><span class="mono">tickets analysed</span></span>
       </span>
       <span class="card-body">
         <span class="mono">Project 01 · Python + Tableau</span>
@@ -352,6 +374,7 @@ button.shot .cap{position:absolute;left:14px;bottom:14px;background:var(--bg);co
     <a href="mailto:lamya.k0h@gmail.com"><span class="mono">Email</span><span>lamya.k0h@gmail.com</span></a>
     <a href="tel:0502281813"><span class="mono">Phone</span><span>0502281813</span></a>
     <a href="https://github.com/LamyaDev" target="_blank" rel="noopener"><span class="mono">GitHub</span><span>github.com/LamyaDev ↗</span></a>
+    <a href="Lamia_AlSaiari_En_CV.pdf" target="_blank" rel="noopener"><span class="mono">CV</span><span>Download (PDF) ↓</span></a>
     <a href="https://www.linkedin.com/in/lamya-khaled-004142273" target="_blank" rel="noopener"><span class="mono">LinkedIn</span><span>linkedin.com/in/lamya-khaled ↗</span></a>
   </div>
 </div></section>
